@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./grid.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet"
+            href="https://cdn.mcom.vn/assets/fontawesome/style.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital@0;1&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+            />
+        <title>BĐS Lê Gia</title>
+    </head>
+    <body>
+        <header id="header" class="header">
+            <div class="grid wide">
+                <div class="header_top">
+                    <div class="header_menu">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Trang chủ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Giới thiệu</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Tiện ích</a>
+                            </li>
+                            <li class="menu-item">
+                                <div class="flex">
+                                    <a href="#" class="menu-link">Dự Án</a>
+                                    <i class="fa-solid fa-chevron-down arrow_one"></i>
+                                </div>
+                                <ul class="submenu_pro">
+                                    <li class="sub_menu-item"><a href="#">Vinhomes Hồ Chí Minh</a></li>
+                                    <li class="sub_menu-item"><a href="#">Vinhomes Hà Nội</a></li>
+                                    <li class="sub_menu-item"><a href="#">Vinhomes Bình Dương</a></li>
+                                    <li class="sub_menu-item"><a href="#">Vinhomes Cần Thơ</a></li>
+                                    <li class="sub_menu-item"><a href="#">Vinhomes Đà Nẵng</a></li>
+                                </ul>
+                            </li>                    
+                        </ul>
+                        <ul class="menu hide_destop">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Tiến độ</a>
+                            </li>
+                            <li class="menu-item">
+                                <div class="flex">
+                                    <a href="#" class="menu-link">Tin tức</a>
+                                    <i class="fa-solid fa-chevron-down arrow_two"></i>
+                                </div>
+                                <ul class="sub_menu">
+                                    <li class="sub_menu-item">
+                                        <a href="#">Ưu đãi khuyến mãi</a>
+                                    </li>
+                                    <li class="sub_menu-item">
+                                        <a href="#">Sự kiện</a>
+                                    </li>
+                                    <li class="sub_menu-item">
+                                        <a href="#">Thị trường</a>
+                                    </li>
+                                    <li class="sub_menu-item">
+                                        <a href="#">Phong cách</a>
+                                    </li>
+                                    <li class="sub_menu-item">
+                                        <a href="#">Tin công ty</a>
+                                    </li>
+                                </ul>                      
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Video</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Liên hệ</a>
+                            </li>
+                        </ul>   
+                    </div>
+                    <div class="header_logo">
+                        <a href="#">
+                            <img src="https://vinhomes.vn/themes/porto/img/vinhomes/ht/vinhomes_logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="header_menu">
+                        <ul class="menu hide_mobile">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Tiến độ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Tin tức</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub_menu">
+                                    <li class="sub_menu-item">
+                                        <a href="#">Ưu đãi khuyến mãi</a>
+                                    </li>
+                                    <li class="sub_menu-item">
+                                        <a href="#">Sự kiện</a>
+                                    </li>
+                                    <li class="sub_menu-item">
+                                        <a href="#">Thị trường</a>
+                                    </li>
+                                    <li class="sub_menu-item">
+                                        <a href="#">Phong cách</a>
+                                    </li>
+                                    <li class="sub_menu-item">
+                                        <a href="#">Tin công ty</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Video</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Liên hệ</a>
+                            </li>
+                        </ul>                        
+                    </div>   
+                    <a href="#" class="bar_mobile">
+                        <i class="fa-solid fa-bars bars"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="section_banner">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="viewport-img">
+                                <img
+                                    src="http://mauweb.monamedia.net/vinpearl-condotel/wp-content/uploads/2018/06/Banner2.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="viewport-img">
+                                <img
+                                    src="http://mauweb.monamedia.net/vinpearl-condotel/wp-content/uploads/2018/06/Banner3.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="viewport-img">
+                                <img
+                                    src="http://mauweb.monamedia.net/vinpearl-condotel/wp-content/uploads/2018/06/Banner1.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="viewport-img">
+                                <img
+                                    src="http://mauweb.monamedia.net/vinpearl-condotel/wp-content/uploads/2018/06/Banner1.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+            <section class="intro">
+                <div class="grid wide">
+                    <h2 class="title_nor">Giới thiệu</h2>
+                    <h3 class="text">
+                        Sự kết hợp hoàn hảo giữa căn hộ cao cấp
+                        và tiện nghi khách sạn 5 sao
+                    </h3>
+                    <p>
+                        Là chuỗi căn hộ, khách sạn được đầu tư xây dựng và quản
+                        lý bởi Tập đoàn Vingroup – Tập đoàn Bất động sản hàng
+                        đầu tại Việt Nam. Các căn hộ thuộc Vinpearl Condotel
+                        được thiết kế bởi các đối tác quốc tế hàng đầu sẽ tạo
+                        thành điểm nhấn nổi bật tại các địa điểm nghỉ dưỡng hàng
+                        đầu Việt Nam như Nha Trang, Đà Nẵng, Phú Quốc, Hạ Long,…
+                        và mang tới cho các nhà đầu tư cơ hội sở hữu những căn
+                        hộ khách sạn đẳng cấp cũng như cơ hội tận hưởng những kỳ
+                        nghỉ riêng tư, thư giãn tuyệt vời.
+                    </p>
+                </div>
+            </section>
+            <section class="project_company">
+                <div class="grid wide">
+                    <h2 class="title_nor">Dự án nổi bật</h2>
+                    <div class="row">
+                        <div class="col l-4 c-6">
+                            <div class="project_content">
+                                <a href="#" class="viewport-img">
+                                    <img src="https://storage.googleapis.com/vinhomes-data-02/styles/images_360_x_220/public/2021_02/tien-ich-vinhomes-west-point-13_0.jpeg?itok=M2Jfn5R-" alt="">
+                                </a>
+                                <h3 class="project_title">Vinpearl
+                                    Empire Condotel</h3>
+                            </div>
+                        </div>
+                        <div class="col l-4 c-6">
+                            <div class="project_content">
+                                <a href="#" class="viewport-img">
+                                    <img src="http://mauweb.monamedia.net/vinpearl-condotel/wp-content/uploads/2018/06/p1.jpg" alt="">
+                                </a>
+                                <h3 class="project_title">Vinpearl
+                                    Riverfront Condotel</h3>
+                            </div>
+                        </div>
+                        <div class="col l-4 c-6">
+                            <div class="project_content">
+                                <a href="#" class="viewport-img">
+                                    <img src="https://storage.googleapis.com/vinhomes-data-02/styles/images_360_x_220/public/2021_10/VHOCP%204_1634877907.jpeg?itok=d6Edqzey" alt="">
+                                </a>
+                                <h3 class="project_title">Vinpearl
+                                    Empire Condotel</h3>
+                            </div>
+                        </div>
+                        <div class="col l-4 c-6">
+                            <div class="project_content">
+                                <a href="#" class="viewport-img">
+                                    <img src="http://mauweb.monamedia.net/vinpearl-condotel/wp-content/uploads/2018/06/p2.jpg" alt="">
+                                </a>
+                                <h3 class="project_title">Vinpearl
+                                    Empire Condotel</h3>
+                            </div>
+                        </div>
+                        <div class="col l-4 c-6">
+                            <div class="project_content">
+                                <a href="#" class="viewport-img">
+                                    <img src="https://storage.googleapis.com/vinhomes-data-02/styles/images_360_x_220/public/2022_03/160413_phoi_canh_du_an_1648090306_1648090306.jpeg?itok=SLCd7GyS" alt="">
+                                </a>
+                                <h3 class="project_title">Vinpearl
+                                    Empire Condotel</h3>
+                            </div>
+                        </div>
+                        <div class="col l-4 c-6">
+                            <div class="project_content">
+                                <a href="#" class="viewport-img">
+                                    <img src="https://storage.googleapis.com/vinhomes-data-02/styles/images_360_x_220/public/2022_03/trung-tam-thuong-mai-vincom-plaza-1_1648089124_1648089124.jpeg?itok=Sk03oGHe" alt="">
+                                </a>
+                                <h3 class="project_title">Vinpearl
+                                    Riverfront Condotel</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+            <section class="section_benefit">
+                <div class="grid wide">
+                    <h2 class="title_nor">Các lợi ích khi đầu tư</h2>
+                    <div class="row">
+                        <div class="col l-3">
+                            <div class="benefit_content">
+                                <i class="fa-light fa-sack-dollar"></i>
+                                <h4 class="benefit_title">CHÍNH SÁCH VAY 65%, CHỈ 700 TRIỆU ĐỒNG ĐÃ CÓ THỂ ĐẦU TƯ</h4>
+                                <p>Hợp tác chiến lược với các ngân hàng – Vingroup đã đưa ra gói vay ưu đãi mà chưa từng có dự án BĐS nào khác có được. Khi mua condotel Vingroup, 
+                                    khách hàng được hỗ trợ vay lên tới 65% với lãi suất 0% trong 12 tháng đầu tiên, phí…</p>
+                            </div>
+                        </div>
+                        <div class="col l-3">
+                            <div class="benefit_content">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h4 class="benefit_title">VỊ TRÍ VÀNG TRÊN BÃI BIỂN ĐẸP NHẤT HÀNH TINH</h4>
+                                <p>
+                                    Nếu như vị trí là yếu tố quan trọng nhất tạo nên giá trị cho BĐS thì các dự án du lịch nghỉ dưỡng của thương hiệu Vinpearl đều tọa lạc tại những bãi biển đẹp nhất hành tinh. 
+                                    Dự án Vinpearl Condotel Empire Nha Trang được xây dựng trên…
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-3">
+                            <div class="benefit_content">
+                                <i class="fa-solid fa-warehouse"></i>
+                                <h4 class="benefit_title">KÊNH ĐẦU TƯ SINH LỜI CAO NHẤT, AN TOÀN NHẤT</h4>
+                                <p>
+                                    Các kênh đầu tư hiện nay bao gồm gửi tiết kiệm ngân hàng với lãi suất tiền việt dao dộng từ 5 tới 7%/1 năm và còn canh cánh trong lòng nỗi lo trượt giá.
+                                     Đầu tư vàng hay ngoại tệ, chứng khoán không còn là sự lựa chọn số…
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-3">
+                            <div class="benefit_content">
+                                <i class="fa-solid fa-hands-holding-dollar"></i>
+                                <h4 class="benefit_title">AN TÂM VỚI CHỦ ĐẦU TƯ LỚN ĐẦY UY TÍN</h4>
+                                <p>
+                                    Được quản lý bởi Vinpearl, thương hiệu nghỉ dưỡng sở hữu chuỗi khách sạn 5 và 6 sao được khách hàng yêu thích nhất. Để mang đến công suất phòng lên tới 95 -100%,
+                                     Tập đoàn Vingroup đã có bước đi chiến lược khi hợp tác cùng các hãng lữ…
+                                </p>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <a href="#" class="btn_benefit">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_parner">
+                <div class="grid wide">
+                    <h2 class="title_nor">Đối tác </h2>
+                    <div class="img_parner">
+                        <ul class="img_one">
+                            <li>
+                                <img src="http://mauweb.monamedia.net/investmentland/wp-content/uploads/2018/01/logo-KhangDien.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="http://mauweb.monamedia.net/investmentland/wp-content/uploads/2018/01/logo-MBbank.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="http://mauweb.monamedia.net/investmentland/wp-content/uploads/2018/01/logo-MIK.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="http://mauweb.monamedia.net/investmentland/wp-content/uploads/2018/01/logo-NamLong.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="http://mauweb.monamedia.net/investmentland/wp-content/uploads/2018/01/logo-NovaLand.jpg" alt="">
+                            </li>
+                        </ul>
+                        <ul class="img_two">
+                            <li>
+                                <img src="http://mauweb.monamedia.net/investmentland/wp-content/uploads/2018/01/logo-Vietcombank.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="http://mauweb.monamedia.net/investmentland/wp-content/uploads/2018/01/logo-Vietinbank.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="http://mauweb.monamedia.net/investmentland/wp-content/uploads/2018/01/logo-Vinhomes.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="http://mauweb.monamedia.net/investmentland/wp-content/uploads/2018/01/logo-VPbank.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="http://mauweb.monamedia.net/investmentland/wp-content/uploads/2018/01/logo-NovaLand.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="project_list">
+                <div class="grid wide">
+                    <h2 class="title_nor">Hình ảnh căn hộ của Vinhomes</h2>
+                    <div class="list_project-img">
+                        <div class="row">
+                            <div class="col l-3">
+                                <a href="#">
+                                    <img src="http://mauweb.monamedia.net/asianacapella/wp-content/uploads/2019/02/thiet-ke-du-an-can-ho-d-edge-thao-dien-quan-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col l-6">
+                                <a href="#" >
+                                    <img class="img_larg-bet" src="http://mauweb.monamedia.net/asianacapella/wp-content/uploads/2019/02/asiana-capella-nha-mau1.jpg" alt="">
+                                </a>
+                                <div class="row between">
+                                    <div class="col l-4 width-100">
+                                        <a href="#">
+                                            <img src="http://mauweb.monamedia.net/asianacapella/wp-content/uploads/2019/02/hinh-07.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 width-100">
+                                        <a href="#">
+                                            <img src="http://mauweb.monamedia.net/asianacapella/wp-content/uploads/2019/02/hinh-08.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 width-100">
+                                        <a href="#">
+                                            <img src="http://mauweb.monamedia.net/asianacapella/wp-content/uploads/2019/02/hinh-04.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <a href="#">
+                                    <img src="http://mauweb.monamedia.net/asianacapella/wp-content/uploads/2019/02/4344_a4_1.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_infomation">
+                <div class="grid wide">
+                    <h2 class="title_nor">Tin Tức</h2>
+                    <div class="mt">
+                        <div class="row">
+                            <div class="col l-9">
+                                <h3 class="heading">Tin tức chính</h3>
+                                <div class="infomation">
+                                    <a href="#">
+                                        <img src="https://storage.googleapis.com/vinhomes-data-02/styles/images_263_x_146/public/2022_06/photo-1-1654320412657593450388_1654571604.jpeg?itok=KmaC30PL" alt="">
+                                    </a>
+                                    <div class="infomation_content">
+                                        <a href="#">
+                                            <h5 class="title">
+                                                Khám phá tọa độ quay MV cực chất của ca sĩ Quân A.P
+                                            </h5>
+                                        </a>
+                                        <p>
+                                            Buổi sáng cuối tuần, Khu đô thị Vinhomes Imperia (Hồng Bàng, Hải Phòng) còn vắng lặng sau giấc ngủ đêm. Anh Phạm Đức Lộc,...
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-clock"></i>
+                                            7/6/2022
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="infomation">
+                                    <a href="#">
+                                        <img src="https://storage.googleapis.com/vinhomes-data-02/styles/images_263_x_146/public/2022_05/png_1653565843.png?itok=gfuOU7Kw" alt="">
+                                    </a>
+                                    <div class="infomation_content">
+                                        <a href="#">
+                                            <h5 class="title">
+                                                Chọn môi trường sống phù hợp giúp con phát triển toàn diện
+                                            </h5>
+                                        </a>
+                                        <p>
+                                            Buổi sáng cuối tuần, Khu đô thị Vinhomes Imperia (Hồng Bàng, Hải Phòng) còn vắng lặng sau giấc ngủ đêm. Anh Phạm Đức Lộc,...
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-clock"></i>
+                                            10/6/2022
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="infomation">
+                                    <a href="#">
+                                        <img src="https://storage.googleapis.com/vinhomes-data-02/styles/images_263_x_146/public/2022_05/anh-1-14521998_1652433109.jpeg?itok=T1K-OEQ-" alt="">
+                                    </a>
+                                    <div class="infomation_content">
+                                        <a href="#">
+                                            <h5 class="title">
+                                                Vincom Mega Mall: Nâng tầm chuẩn sống cho cư dân Vinhomes Smart City
+                                            </h5>
+                                        </a>
+                                        <p>
+                                            Buổi sáng cuối tuần, Khu đô thị Vinhomes Imperia (Hồng Bàng, Hải Phòng) còn vắng lặng sau giấc ngủ đêm. Anh Phạm Đức Lộc,...
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-clock"></i>
+                                            12/6/2022
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="infomation">
+                                    <a href="#">
+                                        <img src="https://storage.googleapis.com/vinhomes-data-02/styles/images_263_x_146/public/2022_05/anh-1-1467_1652408565.jpeg?itok=-wsToCcA" alt="">
+                                    </a>
+                                    <div class="infomation_content">
+                                        <a href="#">
+                                            <h5 class="title">
+                                                Vinhomes Grand Park tổ chức cuộc thi ảnh - Tổng giá trị giải thưởng hơn 800 triệu Đồng
+                                            </h5>
+                                        </a>
+                                        <p>
+                                            Buổi sáng cuối tuần, Khu đô thị Vinhomes Imperia (Hồng Bàng, Hải Phòng) còn vắng lặng sau giấc ngủ đêm. Anh Phạm Đức Lộc,...
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-clock"></i>
+                                            14/6/2022
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <h3 class="heading">Lịch sự kiện</h3>
+                                <div class="list_event">
+                                    <div class="calendar">
+                                        <div class="m_y"> 06/2022</div>
+                                        <div class="day"> 02</div>
+                                    </div>
+                                    <a href="#">
+                                        Lễ hội Quốc tế Thiếu nhi "Hello Summer" Ocean Park
+                                    </a>
+                                </div>
+                                <div class="list_event">
+                                    <div class="calendar">
+                                        <div class="m_y"> 08/2022</div>
+                                        <div class="day"> 04</div>
+                                    </div>
+                                    <a href="#">
+                                        Khai trương tổ hợp biển tạo sóng đẳng cấp thế giới Summer Wave Park
+                                    </a>
+                                </div>
+                                <div class="list_event">
+                                    <div class="calendar">
+                                        <div class="m_y"> 10/2022</div>
+                                        <div class="day"> 06</div>
+                                    </div>
+                                    <a href="#">
+                                        Lễ ra quân Vinhomes Ocean Park - The Empire - Hải trình đánh thức hừng đông
+                                    </a>
+                                </div>
+                                <div class="list_event">
+                                    <div class="calendar">
+                                        <div class="m_y"> 12/2022</div>
+                                        <div class="day"> 08</div>
+                                    </div>
+                                    <a href="#">
+                                        Lễ Kick-off phân khu The Sakura: Warriors of Sakura
+                                    </a>
+                                </div>
+                                <div class="list_event">
+                                    <div class="calendar">
+                                        <div class="m_y"> 14/2022</div>
+                                        <div class="day"> 10</div>
+                                    </div>
+                                    <a href="#">
+                                        Lễ hội Quốc tế Thiếu nhi "Hello Summer" Ocean Park
+                                    </a>
+                                </div>
+                                <div class="list_event">
+                                    <div class="calendar">
+                                        <div class="m_y"> 16/2022</div>
+                                        <div class="day"> 12</div>
+                                    </div>
+                                    <a href="#">
+                                        Lễ hội Quốc tế Thiếu nhi "Hello Summer" Ocean Park
+                                    </a>
+                                </div>
+                                <div class="list_event">
+                                    <div class="calendar">
+                                        <div class="m_y"> 18/2022</div>
+                                        <div class="day"> 14</div>
+                                    </div>
+                                    <a href="#">
+                                        Lễ Kick-off phân khu The Sakura: Warriors of Sakura
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4">
+                        <div class="footer_logo">
+                            <h4 class="footer_title">Văn phòng</h4>
+                            <a href="" class="img_footer">
+                                <img src="https://vinhomes.vn/themes/porto/img/vinhomes/logo-ft.svg" alt="">
+                            </a>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p><strong>Địa chỉ:</strong>  Khu Công nghệ Phần mềm ĐHQG, Linh Trung, Thủ Đức, Hồ Chí Minh</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone-rotary"></i>
+                                    <a href="#">
+                                        <strong>SĐT:</strong>
+                                        <p>08.7878.6779</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="#">
+                                        <strong>Email:</strong>
+                                        <p>mcom@legia.email </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    <a href="#">
+                                        <strong>Website:</strong>
+                                        <p>mcom.vn</p>
+                                    </a>
+                                </li>
+                                <li class="social">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <h4 class="footer_title">Lí do nên chọng chúng tôi</h4>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>                         
+                                Cung cấp những thông tin nhanh chóng & cập nhật mới nhất từ chủ đầu tư                           
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>                             
+                                Cung cấp bảng giá gốc, hỗ trợ quý khách tìm căn phù hợp với ngân sách
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Tư vấn chuyên sâu, làm việc chuyên nghiệp, chính xác & chân thành
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Hỗ trợ làm thủ tục trực tiếp với chủ đầu tư, trước và sau bán hàng lâu dài
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Không thu thêm bất cứ khoản phí nào
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Đảm bảo giải ngân khoản vay nếu khách hàng có nhu cầu vay vốn với hồ sơ tối giản, linh hoạt
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Cam kết giá tốt nhất thị trường
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4">
+                        <h4 class="footer_title">Đăng ký nhận thông tin dự án</h4>
+                        <p class="text_footer">Xin vui lòng để lại địa chỉ email, chúng tôi sẽ cập nhật những tin tức quan trọng của Vinpearl Condotel tới Quý khách!</p>
+                        <form action="" id="form_footer">
+                            <input type="text" placeholder="Họ và Tên">
+                            <input type="text" placeholder="Số Điện Thoại">
+                            <input type="email" name="" id="" placeholder="Email">
+                            <input type="text" placeholder="Dự Án Khách Hàng Quan Tâm *">
+                            <textarea name="" id="" rows="5"  placeholder="Lời Nhắn"></textarea>
+                            <button>Đăng kí</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+       var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+         navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+         },
+       });
+     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script>
+         $(document).ready(function(){
+             // --------------menu--mobile----------------//
+            $(".bar_mobile").click(function(){
+                    $(".header_menu").slideToggle();
+                }); 
+                
+            $(".arrow_one").click(function(){
+                $(".submenu_pro").slideToggle();
+            }); 
+            $(".arrow_two").click(function(){
+                $(".sub_menu").slideToggle();
+            }); 
+         })
+
+      
+     </script>
+    </body>
+</html>

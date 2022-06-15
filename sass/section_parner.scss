@@ -1,0 +1,55 @@
+.section_parner
+{
+    .img_parner
+    {
+        border: 2px solid #333;
+        margin-top: 80px;
+        margin-bottom: 90px;
+
+    }
+    .img_one,.img_two 
+    {
+        display: flex;
+        justify-content: space-between;
+      
+        li:not(:last-child) 
+        {
+            border-right: 2px solid #333;
+        }
+    }
+    .img_one
+    {
+        border-bottom: 2px solid #333;
+    }
+}
+
+@media (max-width:800px) {
+    
+    .section_parner
+    {
+       
+        .img_parner,.img_one,.img_two
+        {
+            border: none;
+            overflow: auto;
+            scroll-snap-type: X mandatory;
+        }
+        .img_one
+        {
+            margin-bottom: 10px;
+        }
+        .img_one,.img_two
+        {
+            li 
+            {
+                scroll-snap-align: center;
+            }
+            li:not(:last-child) 
+            {
+                border: none;
+            }
+            
+        }
+       
+    }
+}
